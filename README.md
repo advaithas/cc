@@ -3,22 +3,14 @@
 It is a microservice architecture-based RESTful Web Service with Kafka enabled to communicate between micro-services. e-wallet application facilitates online payment. Users can register to the application and can transfer the money to the existing user. Each user receives a sing up bonus upon registration. Depending on the transaction status, an email will be sent to the participant of the transaction. If the transaction is successful, an email will be sent to the sender and receiver. However, if the transaction gets failed then an email will be sent to the sender only.
 # Used Skills, Technologies and Tools in Developing this Application
 1) Java 
-2) IntelliJ
-3) Maven
-4) Spring Boot
-5) RESTful API
-6) MVC
-7) Dependency Injection
-8) Inversion of Control   
-9) Postman(API Testing)
-10) JDBC
-11) JPA
-12) Hibernate(ORM)
-13) MySQL(Persistant Storage)
-14) Spring Security
-15) Redis Caching
-16) Microservices Architecture
-17) Kafka(Massaging Queue)
+2) Spring Boot
+3) RESTful API
+4) MVC 
+5) Postman(API Testing)
+6) MySQL(Persistant Storage)
+7) Redis Caching
+8) Microservices Architecture
+9) Kafka(Massaging Queue)
 # Functioning of Application
 This application has four microservices such as user-service, wallet-service, transaction-service, and notification-service. As all the microservices run independently meaning on a different server and have different persistent storage, the shut-down of one microservice due to a technical issue does not stop the whole application. Only the functionality related to that microservice will be affected and the rest of the application would be running perfectly fine. 
  
